@@ -6,11 +6,12 @@ import org.testng.annotations.Test;
 public class LoginPage extends BasePage {
         @Test
         public void login() throws InterruptedException {
-
+              Thread.sleep(5000);
             driver.findElementById("com.adaptavant.setmore:id/login").click();
             WebDriverWait wait=new WebDriverWait(driver, 60);
             //wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.google.android.gms:id/cancel")));
             //driver.findElementById("com.google.android.gms:id/cancel").click();
+             Thread.sleep(5000);
             driver.findElementById("com.adaptavant.setmore:id/forgotpassword").click();
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.adaptavant.setmore:id/email")));
             driver.findElementById("com.adaptavant.setmore:id/email").sendKeys("new@sb.co");
