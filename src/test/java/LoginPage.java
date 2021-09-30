@@ -11,7 +11,7 @@ public class LoginPage extends BasePage {
             WebDriverWait wait=new WebDriverWait(driver, 60);
             //wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.google.android.gms:id/cancel")));
             //driver.findElementById("com.google.android.gms:id/cancel").click();
-             Thread.sleep(5000);
+             Thread.sleep(2000);
             driver.findElementById("com.adaptavant.setmore:id/forgotpassword").click();
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.adaptavant.setmore:id/email")));
             driver.findElementById("com.adaptavant.setmore:id/email").sendKeys("new@sb.co");
