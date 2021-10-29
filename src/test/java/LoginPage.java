@@ -4,9 +4,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class LoginPage extends BasePage {
-        @Test
+        @Test(description = "Login Setmore")
         public void login() throws InterruptedException {
-
+            childTest = test.createNode("Sign in");
             driver.findElementById("com.adaptavant.setmore:id/login").click();
             WebDriverWait wait=new WebDriverWait(driver, 60);
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.google.android.gms:id/cancel")));

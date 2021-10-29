@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+  <configuration>
+
+    <!-- report theme -->
+    <!-- STANDARD, DARK -->
+    <theme>STANDARD</theme>
+
+    <!-- document encoding -->
+    <!-- defaults to UTF-8 -->
+    <encoding>UTF-8</encoding>
+
+    <!-- protocol for script and stylesheets -->
+    <!-- defaults to https -->
+    <!-- HTTP, HTTPS -->
+    <protocol>HTTPS</protocol>
+
+    <!-- offline report -->
+    <timelineEnabled>true</timelineEnabled>
+    
+    <!-- offline report -->
+    <enableOfflineMode>false</enableOfflineMode>
+
+    <!-- title of the document -->
+    <documentTitle>Setmore Android Automation Report</documentTitle>
+
+    <!-- report name - displayed at top-nav -->
+    <reportName>Setmore Android</reportName>
+
+    <!-- timestamp format -->
+    <timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
+
+	<!-- ChartVisibilityOnOpen -->
+    <ChartVisibilityOnOpen>true</ChartVisibilityOnOpen>
+
+	<!-- TestViewChartLocation -->
+    <TestViewChartLocation>ChartLocation.TOP</TestViewChartLocation>
+    
+   <!--   <reportName> <![CDATA[<img src="reports/deployment/setmore-img.jpg"/>]]></reportName>  -->
+    
+    <!-- JS -->
+    <JS>js-string</JS>
+
+    <!-- custom javascript -->
+    <scripts>
+      <![CDATA[
+        $(document).ready(function() {
+            
+        });
+      ]]>
+    </scripts>
+
+    <!-- custom styles -->
+    <styles>
+      <![CDATA[
+      
+      ]]>
+    </styles>
+
+  </configuration>
+</extentreports>
