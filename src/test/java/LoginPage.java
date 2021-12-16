@@ -17,6 +17,7 @@ public class LoginPage extends BasePage {
             driver.findElementById("com.adaptavant.setmore:id/reset").click();
             Thread.sleep(5000);
             System.out.println("hello completed");
+                //test flow
         }
 
     }
